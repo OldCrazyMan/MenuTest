@@ -48,7 +48,7 @@ final class BannersView: UIView {
         let row = NSCollectionLayoutGroup.horizontal(layoutSize: rowSize, subitems: [item])
         
         let section = NSCollectionLayoutSection(group: row)
-        section.contentInsets = NSDirectionalEdgeInsets(top: 0, leading: 16, bottom: 0, trailing: 0)
+        section.contentInsets = NSDirectionalEdgeInsets(top: 0, leading: 18, bottom: 0, trailing: 0)
         section.orthogonalScrollingBehavior = .continuousGroupLeadingBoundary
         
         return section

@@ -11,8 +11,11 @@ final class CategoryCell: UICollectionViewCell {
     let titleLabel: UILabel = {
         let label = UILabel()
         label.textAlignment = .center
-        label.font = UIFont.boldSystemFont(ofSize: 18)
-        label.textColor = UIColor(red: 0.992, green: 0.227, blue: 0.412, alpha: 0.4)
+        label.font = UIFont.systemFont(ofSize: 18)
+        label.textColor = UIColor(red: 0.992, 
+                                  green: 0.227,
+                                  blue: 0.412,
+                                  alpha: 0.4)
         label.adjustsFontSizeToFitWidth = true
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
@@ -23,11 +26,22 @@ final class CategoryCell: UICollectionViewCell {
     override var isSelected: Bool {
         didSet {
             if isSelected {
-                contentView.backgroundColor = UIColor(red: 0.992, green: 0.227, blue: 0.412, alpha: 0.2)
-                titleLabel.textColor = UIColor(red: 0.992, green: 0.227, blue: 0.412, alpha: 1)
+                contentView.backgroundColor = UIColor(red: 0.992, 
+                                                      green: 0.227,
+                                                      blue: 0.412,
+                                                      alpha: 0.2)
+                titleLabel.textColor = UIColor(red: 0.992, 
+                                               green: 0.227,
+                                               blue: 0.412,
+                                               alpha: 1)
+                titleLabel.font = UIFont.boldSystemFont(ofSize: 18)
             } else {
                 contentView.backgroundColor = .clear
-                titleLabel.textColor = UIColor(red: 0.992, green: 0.227, blue: 0.412, alpha: 0.4)
+                titleLabel.font = UIFont.systemFont(ofSize: 18)
+                titleLabel.textColor = UIColor(red: 0.992, 
+                                               green: 0.227,
+                                               blue: 0.412,
+                                               alpha: 0.4)
             }
         }
     }
@@ -43,7 +57,10 @@ final class CategoryCell: UICollectionViewCell {
         backgroundColor = .clear
         
         contentView.layer.borderWidth = 1
-        contentView.layer.borderColor = UIColor(red: 0.992, green: 0.227, blue: 0.412, alpha: 0.4).cgColor
+        contentView.layer.borderColor = UIColor(red: 0.992, 
+                                                green: 0.227,
+                                                blue: 0.412,
+                                                alpha: 0.4).cgColor
         contentView.layer.cornerRadius = contentView.frame.height / 2
         
         contentView.addSubview(titleLabel)

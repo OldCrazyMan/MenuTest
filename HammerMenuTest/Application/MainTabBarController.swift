@@ -32,17 +32,17 @@ class MainTabBarController: UITabBarController {
         let fourthVC = FourthViewController()
         
         viewControllers = [
-            generateNavigationController(rootViewController: firstVC, image: #imageLiteral(resourceName: "Меню")),
-            generateNavigationController(rootViewController: secondVC,  image: #imageLiteral(resourceName: "Контакты")),
-            generateNavigationController(rootViewController: thirdVC, image: #imageLiteral(resourceName: "Профиль")),
-            generateNavigationController(rootViewController: fourthVC, image: #imageLiteral(resourceName: "Корзина"))
+            generateNavigationController(rootViewController: firstVC, title: "Меню", image: "fork.knife"),
+            generateNavigationController(rootViewController: secondVC, title: "Контакты",  image: "figure.2"),
+            generateNavigationController(rootViewController: thirdVC, title: "Профиль", image: "person"),
+            generateNavigationController(rootViewController: fourthVC, title: "Корзина", image: "basket")
         ]
     }
     
-    private func generateNavigationController(rootViewController: UIViewController, image: UIImage) -> UIViewController {
+    private func generateNavigationController(rootViewController: UIViewController, title: String, image: String) -> UIViewController {
         let navigationVC = UINavigationController(rootViewController: rootViewController)
         navigationVC.tabBarItem.title = title
-        navigationVC.tabBarItem.image = image
+        navigationVC.tabBarItem.image = UIImage(systemName: image)
         return navigationVC
     }
 }

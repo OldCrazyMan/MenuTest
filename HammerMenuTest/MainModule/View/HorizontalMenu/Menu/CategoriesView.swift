@@ -20,7 +20,7 @@ final class CategoriesView: UITableViewHeaderFooterView {
         collectionView.dataSource = self
         collectionView.delegate = self
         collectionView.register(CategoryCell.self, forCellWithReuseIdentifier: CategoryCell.reuseId)
-        collectionView.backgroundColor = UIColor(red: 0.93, green: 0.93, blue: 0.93, alpha: 1)
+        collectionView.backgroundColor = #colorLiteral(red: 0.93, green: 0.93, blue: 0.93, alpha: 1)
         collectionView.translatesAutoresizingMaskIntoConstraints = false
         return collectionView
     }()
@@ -67,7 +67,7 @@ final class CategoriesView: UITableViewHeaderFooterView {
         let row = NSCollectionLayoutGroup.horizontal(layoutSize: rowSize, subitems: [item])
         
         let section = NSCollectionLayoutSection(group: row)
-        section.contentInsets = NSDirectionalEdgeInsets(top: 5, leading: 10, bottom: 20, trailing: 0)
+        section.contentInsets = NSDirectionalEdgeInsets(top: 0, leading: 10, bottom: 25, trailing: 0)
         
         section.orthogonalScrollingBehavior = .continuousGroupLeadingBoundary
         

@@ -33,7 +33,7 @@ class MenuTableViewCell: UITableViewCell {
     func setupCell(model: PizzaModel) {
         nameLabel.text = model.title
         descriptionLabel.text = model.description
-        priceButton.setTitle(String(model.price), for: .normal)
+        priceButton.setTitle("\(model.price) р.", for: .normal)
         
         let urlString = model.imageURL
         guard let url = URL(string: urlString) else { return }

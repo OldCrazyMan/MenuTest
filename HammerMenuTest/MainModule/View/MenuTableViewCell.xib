@@ -36,10 +36,12 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QPU-Lp-lU6">
-                        <rect key="frame" x="261" y="110.66666666666667" width="91" height="34.333333333333329"/>
+                        <rect key="frame" x="295.33333333333331" y="109" width="56.666666666666686" height="36"/>
                         <color key="tintColor" red="0.99098151919999999" green="0.22850424050000001" blue="0.41051852700000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <state key="normal" title="Button"/>
-                        <buttonConfiguration key="configuration" style="plain" title="от 345 р"/>
+                        <buttonConfiguration key="configuration" style="plain" title="345">
+                            <fontDescription key="titleFontDescription" type="system" pointSize="18"/>
+                        </buttonConfiguration>
                     </button>
                 </subviews>
                 <constraints>
